@@ -145,4 +145,15 @@ return array(
             ),
         ),
     ),
+    'zf-apigility' => array(
+        'db-connected' => array(
+            'test\\V1\\Rest\\Testsql\\TestsqlResource' => array(
+                'adapter_name' => 'test_sqlite',
+                'table_name' => 'testsql',
+                'hydrator_name' => 'Zend\\Stdlib\\Hydrator\\ArraySerializable',
+                'controller_service_name' => 'test\\V1\\Rest\\Testsql\\Controller',
+                'entity_identifier_name' => 'id',
+            ),
+        ),
+    ),
 );
